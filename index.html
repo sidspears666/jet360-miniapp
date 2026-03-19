@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kurye Paneli</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Kurye Paneli</h1>
+      <p id="courierMeta" class="muted">Yukleniyor...</p>
+    </header>
+
+    <section class="card">
+      <h2>Bakiye</h2>
+      <div id="balance" class="grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Aktif teslimatlar</h2>
+      <div id="activeList" class="list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Gecmis</h2>
+      <div id="historyList" class="list"></div>
+    </section>
+
+    <section class="card">
+      <button id="refreshBtn" class="btn secondary">Yenile</button>
+      <pre id="errorBox" class="error hidden"></pre>
+    </section>
+  </main>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
